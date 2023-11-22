@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Creative hover</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    .i:hover{
+        transition: all 0s linear;
+        opacity: 0;
+    }
+    .h{
+        display: block;
+        position:absolute;
+        z-index: 2;
+        width: 100%;
+        text-align: center;
+        top: 35px;
+        font-size: 40px;
+        color: rgba(245, 245, 220, 1);
+        text-shadow: 0 5px 17px rgba(87, 87, 80, 0.85);
+    }
+    .w{
+        margin: 0 auto;
+        white-space: nowrap;
+        max-width: 1200px;
+        width: 100%;
+        height: 600px;
+        position: absolute;
+        top:0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        background: rgba(66, 66, 66, .5) url('img/sunset_Sun_reflection_sky-219822.jpg!d') repeat fixed;
+        background-position: 50% 100%;
+        background-size: cover;
+        position: relative;
+        z-index: 5;
+        font-size: 0;
+    }
+    .i{
+        width: 520px;
+        height: 100%;
+        display: inline-block;
+        position: relative;
+        z-index: 4;
+        padding: 2px;
+        transition: all 1.3s ease-in-out;
+        background: rgba(66, 66, .5) url('img/mm.jpg') repeat fixed;
+        background-size: cover;
+        background-position: 50% 100%;
+        border-radius: 0%;
+    }
+    body{
+        margin-top: 50px;
+    }
+</style>
+<body>
+
+<div class="w">
+    <div class="i"></div>
+    <div class="i"></div>
+    <div class="i"></div>
+    ...all 48 div
+    <div class="h">
+        <h1>Creative hover</h1>
+    </div>
+</div>
+
+
+</body>
+</html>
